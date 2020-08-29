@@ -15,14 +15,12 @@
  */
  // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
-
 .bg {
   width: 100vw;
   height: 100vh;
   background-image: image-url("bg.jpg");
   background-position: 60% 50%;
 }
-
 .navbar {
   background-color: rgb(148, 96, 0);
 }
