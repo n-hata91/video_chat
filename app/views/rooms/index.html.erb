@@ -15,4 +15,18 @@
   </div>
   <input id="their-id" placeholder="パスワード">
   <button id="make-call" class="btn btn-info">参加</button>
+  <button id="hang_up" class="btn btn-info">終了</button>
+</div>
+
+
+<input type="text" id='chat-input'>
+<button id='button' class='btn btn-warning'>送信</button>
+<div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <ul id='messages' class="list-group list-group-flush">
+        <%= render 'message', messages:@messages %>
+      </ul>
+    </div>
+  </div>
 </div>
