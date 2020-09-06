@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <ul id='messages' class="list-group list-group-flush">
+    <% messages.each do |message| %>
+      <li class="list-group-item"><p class="card-text"><%= message.content %></p></li>
+    <% end %>
+    </ul>
+  </div>
+</div>

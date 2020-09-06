@@ -18,15 +18,12 @@
   <button id="hang_up" class="btn btn-info">終了</button>
 </div>
 
-
-<input type="text" id='chat-input'>
-<button id='button' class='btn btn-warning'>送信</button>
-<div>
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <ul id='messages' class="list-group list-group-flush">
-        <%= render 'message', messages:@messages %>
-      </ul>
-    </div>
+<form>
+  <div class="form-group row">
+    <input type="email" id='chat-input' class="form-control col-2">
+    <button id='button' class='btn btn-warning'>送信</button>
   </div>
+</form>
+<div>
+  <%= render 'message', messages:@messages %>
 </div>
